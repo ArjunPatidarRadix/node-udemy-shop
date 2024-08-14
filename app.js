@@ -1,5 +1,6 @@
 const path = require("path");
 const fs = require("fs");
+const dotenv = require("dotenv");
 
 const express = require("express");
 const bodyParser = require("body-parser");
@@ -18,6 +19,8 @@ const multer = require("multer");
 const { default: helmet } = require("helmet");
 const compression = require("compression");
 const morgan = require("morgan");
+
+dotenv.config();
 
 //mongodb+srv://node_complete:Radixweb8@cluster0.vyxxsts.mongodb.net/shop?retryWrites=true&w=majority&appName=Cluster0
 const MONGODB_URI = `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@cluster0.vyxxsts.mongodb.net/${process.env.MONGO_DEFAULT_DATABASE}?retryWrites=true&w=majority&appName=Cluster0`;
