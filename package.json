@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "NODE_ENV=production MONGO_USER=node_complete MONGO_PASSWORD=Radixweb8 MONGO_DEFAULT_DATABASE=shop STRIPE_KEY=sk_test_51Pl5SA05VBQToKUQWlgfFAQde0z9ijlrbpMYtz7gNe1nXFZLCsSdokBNIg3pHdrV4ruhL1F02b5lrbYH0N74bX4S00GAkVXMg6 node app.js",
+    "start": "NODE_ENV=production MONGO_USER=node_complete MONGO_PASSWORD=Radixweb8 MONGO_DEFAULT_DATABASE=shop STRIPE_KEY=sk_test_51Pl5SA05VBQToKUQWlgfFAQde0z9ijlrbpMYtz7gNe1nXFZLCsSdokBNIg3pHdrV4ruhL1F02b5lrbYH0N74bX4S00GAkVXMg6 SENDGRID_API_KEY=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 node app.js",
     "start-server": "node app.js",
     "start-dev": "nodemon app.js"
   },
